@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Booking from '../components/Booking';
 import Experience from '../components/Experience';
 import FitnessPro from '../components/FitnessPro';
@@ -12,6 +12,12 @@ import Trial from '../components/Trial';
 import Trusted from '../components/Trusted';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  });
   return (
     <div>
       <Hero />
